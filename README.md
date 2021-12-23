@@ -25,6 +25,24 @@ cd sense
 cargo install --path=.
 ```
 
+## How-to use sense
+
+```Bash
+$ sense --help
+```
+
+```Text
+Usage: sense [-i <interval>] [-t <title>] [--wxh <wxh>]
+
+Simple tool to sample and plot power consumption, average frequency and cpu die temperatures over time.
+
+Options:
+  -i, --interval    optional sample interval in milliseconds (defaults to 1000)
+  -t, --title       optional title (e.g. a condition for the run)
+  --wxh             optional image size dimensions WxH (1024x768)
+  --help            display usage information
+```
+
 ## License
 
 Licensed under either of
