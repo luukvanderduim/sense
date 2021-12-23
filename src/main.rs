@@ -51,9 +51,9 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut pwr_series: Vec<f64> = Vec::with_capacity(2048);
     let mut temp_series: Vec<f64> = Vec::with_capacity(2048);
 
-    write!(
+    writeln!(
         stdout,
-        "{}{}Press 'q' to stop sampling, write plots and quit.\n",
+        "{}{}Press 'q' to stop sampling, write plots and quit.",
         clear::All,
         Goto(1, 1)
     )?;

@@ -3,7 +3,7 @@
 [![CI](https://github.com/luukvanderduim/sense/workflows/CI/badge.svg)](https://github.com/luukvanderduim/sense/actions)
 [![Coverage Status](https://coveralls.io/repos/github/luukvanderduim/sense/badge.svg?branch=main)](https://coveralls.io/github/luukvanderduim/sense?branch=main)
 
-Sense is a small tool to gather data on cpu temperature, power usage and clock requency and plot graphs during some load.
+Sense is a small tool to gather data on cpu temperature, power usage and clock frequency and plot graphs during some load.
 
 ![smallpt load - power and frequency plot](img/power_and_frequency_1640271704_sense_plot.png)
 ![smallpt load - power and temperature plot](img/power_and_temperatue_1640271703_sense_plot.png)

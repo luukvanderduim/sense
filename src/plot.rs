@@ -3,7 +3,7 @@ use std::time::SystemTime;
 
 use crate::Arghs;
 
-const NAME_SUFFIX: &'static str = "sense_plot.png";
+const NAME_SUFFIX: &str = "sense_plot.png";
 
 /// Plots graphs
 /// Takes frequencies series, power series and temperature series

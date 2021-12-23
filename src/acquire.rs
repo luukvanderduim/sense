@@ -1,4 +1,3 @@
-use cpu_freq;
 use sensors::{Chip, Feature, LibsensorsError, Sensors};
 use std::error::Error;
 
@@ -28,7 +27,7 @@ pub fn get_current_power(p_core: &Feature) -> Result<f64, sensors::LibsensorsErr
 pub fn get_avg_freq() -> f64 {
     let freqvec = cpu_freq::get();
     let freqvec: Vec<f64> = freqvec.into_iter().map(|f| f.cur.unwrap() as f64).collect();
-    freqvec.clone().iter().sum::<f64>() / freqvec.len() as f64
+    freqvec.iter().sum::<f64>() / freqvec.len() as f64
 }
 
 /// Gets sensors' temp and power chip features.
