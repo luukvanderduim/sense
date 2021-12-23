@@ -1,0 +1,16 @@
+[package]
+name = "sense"
+version = "0.1.0"
+edition = "2021"
+description = "A simple tool to sample and plot power consumption, average frequency and cpu die temperatures over time."
+repository = "https://github.com/luukvanderduim/sense"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+argh = "0.1.7"
+cpu-freq = "0.0.2"
+plotters = "0.3.1"
+sensors = "0.2.1"
+termion = "1.5.6"
