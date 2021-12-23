@@ -8,24 +8,31 @@ Sense is a small tool to gather data on cpu temperature, power usage and clock r
 ![smallpt load - power and frequency plot](img/power_and_frequency_1640271704_sense_plot.png)
 ![smallpt load - power and temperature plot](img/power_and_temperatue_1640271703_sense_plot.png)
 
+## Dependencies
+
+Sense is written in Rust. If you wish to try `sense`, you will need to install Rust.
+See [the fine rust-lang web page](https://www.rust-lang.org/) for more information on how to install Rust.
+
+Sense depends on [zenpower3](https://github.com/Ta180m/zenpower3) by Anthony Wang.
+
 ## Installation
 
+To install you clone the repository:
 
-
-### Cargo
-
-* Install the rust toolchain in order to have cargo installed by following
-  [this](https://www.rust-lang.org/tools/install) guide.
-* run `cargo install sense`
+```Bash
+git clone https://github.com/luukvanderduim/sense.git
+cd sense
+cargo install --path=.
+```
 
 ## License
 
 Licensed under either of
 
- * Apache License, Version 2.0
-   ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
- * MIT license
-   ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+* Apache License, Version 2.0
+   ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
+* MIT license
+   ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
 at your option.
 
