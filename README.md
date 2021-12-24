@@ -25,7 +25,16 @@ cd sense
 cargo install --path=.
 ```
 
-## How-to use sense
+## Usage
+
+The intended workflow is:
+
+- start sense
+- start workload of interest in another terminal
+- stop sense
+- profit!
+
+You may want to look at the available command line arguments:
 
 ```Bash
 sense --help
@@ -44,6 +53,7 @@ Options:
 ```
 
 Example: 
+
 ```Bash
 sense -i 2000 -t "kernel compilation" --wxh 1920x1080
 ```
