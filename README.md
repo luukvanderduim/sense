@@ -28,7 +28,7 @@ cargo install --path=.
 ## How-to use sense
 
 ```Bash
-$ sense --help
+sense --help
 ```
 
 ```Text
@@ -41,6 +41,11 @@ Options:
   -t, --title       optional title (e.g. a condition for the run)
   --wxh             optional image size dimensions WxH (1024x768)
   --help            display usage information
+```
+
+Example: 
+```Bash
+sense -i 2000 -t "kernel compilation" --wxh 1920x1080
 ```
 
 ## License
