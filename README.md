@@ -5,8 +5,8 @@
 
 Sense is a small tool to gather data on cpu temperature, power usage and clock frequency and plot graphs during some load.
 
-![smallpt load - power and frequency plot](img/power_and_frequency_1640271704_sense_plot.png)
-![smallpt load - power and temperature plot](img/power_and_temperatue_1640271703_sense_plot.png)
+![smallpt load - power and frequency plot](img/power_and_frequency_sense_plot.png)
+![smallpt load - power and temperature plot](img/power_and_temperatue_sense_plot.png)
 
 ## Dependencies
 
@@ -41,18 +41,19 @@ sense --help
 ```
 
 ```Text
-Usage: sense [-i <interval>] [-t <title>] [--wxh <wxh>]
+Usage: sense [-i <interval>] [-w <write-data>] [-t <title>] [--wxh <wxh>]
 
 Simple tool to sample and plot power consumption, average frequency and cpu die temperatures over time.
 
 Options:
   -i, --interval    optional sample interval in milliseconds (defaults to 1000)
+  -w, --write-data  optionally save data series (defaults to `true`)
   -t, --title       optional title (e.g. a condition for the run)
   --wxh             optional image size dimensions WxH (1024x768)
   --help            display usage information
 ```
 
-Example: 
+Example:
 
 ```Bash
 sense -i 2000 -t "kernel compilation" --wxh 1920x1080
@@ -62,9 +63,10 @@ sense -i 2000 -t "kernel compilation" --wxh 1920x1080
 
 Licensed under either of
 
-* Apache License, Version 2.0
+- Apache License, Version 2.0
    ([LICENSE-APACHE](LICENSE-APACHE) or <http://www.apache.org/licenses/LICENSE-2.0>)
-* MIT license
+
+- MIT license
    ([LICENSE-MIT](LICENSE-MIT) or <http://opensource.org/licenses/MIT>)
 
 at your option.
