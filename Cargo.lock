@@ -714,9 +714,9 @@ dependencies = [
 
 [[package]]
 name = "sensors"
-version = "0.2.1"
+version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6993a8ec96ef1f96f4285b5fbe7f80d7c8b2674b20f0c9bbbdaab80d14f0c06e"
+checksum = "7a3af4792f6a434642b5805ab1f086a621a369ad06a0d466ab89aeb556ddd6d0"
 dependencies = [
  "libc",
  "libsensors-sys",
