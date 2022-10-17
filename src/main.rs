@@ -111,7 +111,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         let mut wtr = Writer::from_path(&filename_csv)?;
 
         // Write column names
-        wtr.serialize(&["Power", "Clock", "Temperature"])?;
+        wtr.serialize(["Power", "Clock", "Temperature"])?;
 
         //  A sample of each quantity together makes a sample record.
         // This loops iterates over these samples and writes them to the CSV.

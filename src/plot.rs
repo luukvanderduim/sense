@@ -67,43 +67,43 @@ pub fn plot(
     pt_chart
         .draw_series(LineSeries::new(
             (0..temp_series.len()).zip(temp_series.iter().cloned()),
-            (&BLUE).stroke_width(2),
+            BLUE.stroke_width(2),
         ))?
         .label("y = Tdie (° C)")
-        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], &BLUE));
+        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], BLUE));
 
     pf_chart
         .draw_series(LineSeries::new(
             (0..freq_series.len()).zip(freq_series.iter().cloned()),
-            (&BLUE).stroke_width(2),
+            BLUE.stroke_width(2),
         ))?
         .label("y = Clock frequency (MHz)")
-        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], &BLUE));
+        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], BLUE));
 
     pt_chart
         .draw_secondary_series(LineSeries::new(
             power_series.iter().cloned().enumerate(),
-            (&RED).stroke_width(2),
+            RED.stroke_width(2),
         ))?
         .label("y = Power(W)")
-        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], &RED));
+        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], RED));
 
     pf_chart
         .draw_secondary_series(LineSeries::new(
             power_series.iter().cloned().enumerate(),
-            (&RED).stroke_width(2),
+            RED.stroke_width(2),
         ))?
         .label("y = Power(W)")
-        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], &RED));
+        .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], RED));
 
     pt_chart
         .configure_series_labels()
-        .background_style(&RGBColor(128, 128, 128))
+        .background_style(RGBColor(128, 128, 128))
         .draw()?;
 
     pf_chart
         .configure_series_labels()
-        .background_style(&RGBColor(128, 128, 128))
+        .background_style(RGBColor(128, 128, 128))
         .draw()?;
 
     pt_root.present()?;
