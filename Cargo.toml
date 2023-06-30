@@ -5,6 +5,8 @@ edition = "2021"
 description = "A simple tool to sample and plot power consumption, average frequency and cpu die temperatures over time."
 repository = "https://github.com/luukvanderduim/sense"
 license = "MIT OR Apache-2.0"
+readme = "README.md"
+authors = ["Luuk van der Duim <luukvanderduim@gmail.com>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -13,6 +15,13 @@ argh = "0.1.9"
 cpu-freq = "0.0.2"
 csv = "1.1.6"
 once_cell = "1.16.0"
-plotters = "0.3.4"
+plotters = { version = "0.3.5", default-features = false, features = [
+        "bitmap_backend", "bitmap_encoder", "bitmap_gif",
+        "svg_backend",
+        "image",
+        "all_series", "all_elements",
+        "full_palette",
+        "colormaps"
+] }
 sensors = "0.2.2"
 termion = "2.0.1"

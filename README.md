@@ -40,7 +40,7 @@ You may want to look at the available command line arguments:
 sense --help
 ```
 
-```Text
+```Bash
 Usage: sense [-i <interval>] [-w <write-data>] [-t <title>] [--wxh <wxh>]
 
 Simple tool to sample and plot power consumption, average frequency and cpu die temperatures over time.

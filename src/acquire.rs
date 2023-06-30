@@ -23,7 +23,7 @@ pub fn get_current_power(p_core: &Feature) -> Result<f64, sensors::LibsensorsErr
     }
 }
 
-/// Returns current average frequency accross all cores in MHz.
+/// Returns current average frequency across all cores in MHz.
 pub fn get_avg_freq() -> f64 {
     let freqvec = cpu_freq::get();
     let freqvec: Vec<f64> = freqvec.into_iter().map(|f| f.cur.unwrap() as f64).collect();

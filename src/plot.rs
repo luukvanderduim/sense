@@ -15,10 +15,10 @@ pub fn plot(
     let secs_epoch = crate::TIMESTAMP.deref();
     let wxh = args.wxh;
 
-    let power_and_temperatue = format!("power_and_temperatue_{}_{}", secs_epoch, NAME_SUFFIX);
+    let power_and_temperature = format!("power_and_temperature_{}_{}", secs_epoch, NAME_SUFFIX);
     let power_and_frequency = format!("power_and_frequency_{}_{}", secs_epoch, NAME_SUFFIX);
 
-    let pt_root = BitMapBackend::new(&power_and_temperatue, wxh).into_drawing_area();
+    let pt_root = BitMapBackend::new(&power_and_temperature, wxh).into_drawing_area();
     pt_root.fill(&WHITE)?;
 
     let pf_root = BitMapBackend::new(&power_and_frequency, wxh).into_drawing_area();
